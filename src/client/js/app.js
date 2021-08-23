@@ -15,7 +15,7 @@ async function performAction(event) {
 
   if (city) {
 
-    let cityName = removeSpace(city);
+    let cityName = Client.removeSpace(city);
     let data = { city, cityName, start, daysUntilTrip };
     console.log(cityName);
 
@@ -56,12 +56,6 @@ const postData = async (url, data) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   });
-}
-
-const removeSpace = (string) => {
-  let regExp = new RegExp(' ', 'g')
-  let formattedString = string.replace(regExp, '+');
-  return formattedString;
 }
 
 export { performAction };

@@ -1,5 +1,6 @@
 import { performAction } from './js/app'
 import { updateUI } from './js/updateUI'
+import { removeSpace } from './js/removeSpace'
 
 import './styles/style.scss'
 
@@ -26,5 +27,6 @@ window.onload = () => {
 
 export { 
     performAction, 
-    updateUI 
+    updateUI,
+    removeSpace
 }
