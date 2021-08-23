@@ -14,3 +14,7 @@ This travel weather app lets users enter a location and a departure date to get 
 - npm run build-dev 
 - npm run build-prod 
 - npm start 
+
+## Note
+
+I used the REST countries API to fetch more information about the location for the user
