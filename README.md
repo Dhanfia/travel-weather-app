@@ -8,3 +8,9 @@ This travel weather app lets users enter a location and a departure date to get 
 - Weatherbit
 - Pixabay
 - REST countries 
+
+## Run the application using
+
+- npm run build-dev 
+- npm run build-prod 
+- npm start 
