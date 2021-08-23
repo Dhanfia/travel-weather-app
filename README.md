@@ -4,7 +4,7 @@ This travel weather app lets users enter a location and a departure date to get 
 
 ##  API's used
 
-Geonames
-Weatherbit
-Pixabay
-REST countries 
+- Geonames
+- Weatherbit
+- Pixabay
+- REST countries 
