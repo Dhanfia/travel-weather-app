@@ -21,8 +21,16 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [ 'style-loader', 'css-loader', 'sass-loader' ]
-            }
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(png|jpeg|jpg|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
+            },
         ]
     },
     plugins: [
@@ -38,11 +46,11 @@ module.exports = {
             // Automatically remove all unused webpack assets on rebuild
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
-        })      
+        })
     ],
     devServer: {
         proxy: {
-          '/geonamesData': 'http://localhost:8081',
+            '/geonamesData': 'http://localhost:8081',
         },
     }
 }

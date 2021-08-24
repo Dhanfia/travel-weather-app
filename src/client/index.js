@@ -1,6 +1,7 @@
 import { performAction } from './js/app'
 import { updateUI } from './js/updateUI'
 import { removeSpace } from './js/removeSpace'
+import background from './media/background.jpeg';
 
 import './styles/style.scss'
 
@@ -20,6 +21,10 @@ window.onload = () => {
     const startDate = document.getElementById('start');
     startDate.setAttribute("min", today);
     startDate.valueAsDate = new Date();
+
+
+    const img = document.getElementById('image');
+    img.src = background;
 
     const button = document.getElementById('generate');
     document.querySelector('#generate').addEventListener("click", performAction);
